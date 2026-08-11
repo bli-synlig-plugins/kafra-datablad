@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Kafra Datablad
  * Description: Last opp PDF-datablad, koble dem til WooCommerce-produkter, vis på produktsider og på /dokumenter/.
- * Version: 1.2.0
+ * Version: 1.2.1
  * Author: Benjamin
  * Text Domain: kafra-datablad
  * Requires Plugins: woocommerce
@@ -10,7 +10,7 @@
 
 if (!defined('ABSPATH')) exit;
 
-define('KDB_VERSION', '1.2.0');
+define('KDB_VERSION', '1.2.1');
 define('KDB_PLUGIN_FILE', __FILE__);
 define('KDB_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('KDB_PLUGIN_URL', plugin_dir_url(__FILE__));

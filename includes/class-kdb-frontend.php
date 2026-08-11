@@ -141,7 +141,7 @@ class KDB_Frontend {
 		}
 		?>
 		<article class="<?php echo esc_attr($classes); ?>">
-			<a class="kdb-card__open" href="<?php echo esc_url($url); ?>" target="_blank" rel="noopener">
+			<div class="kdb-card__main">
 				<span class="kdb-card__icon" aria-hidden="true">
 					<?php echo self::icon_svg('file-text'); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 				</span>
@@ -154,7 +154,7 @@ class KDB_Frontend {
 						<span class="kdb-card__meta"><?php echo esc_html(implode(' · ', $item['meta_parts'])); ?></span>
 					<?php endif; ?>
 				</span>
-			</a>
+			</div>
 
 			<a
 				class="kdb-card__download"
@@ -182,6 +182,14 @@ class KDB_Frontend {
 					</div>
 				</div>
 			<?php endif; ?>
+
+			<a
+				class="kdb-card__open"
+				href="<?php echo esc_url($url); ?>"
+				target="_blank"
+				rel="noopener"
+				aria-label="<?php echo esc_attr(sprintf('Åpne %s', $item['title'])); ?>"
+			></a>
 		</article>
 		<?php
 	}
