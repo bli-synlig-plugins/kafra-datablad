@@ -1,0 +1,260 @@
+.kdb-product-docs {
+	margin: 0;
+}
+
+.kdb-product-docs__title {
+	margin: 0 0 0.75rem;
+	font-size: 1.05rem;
+}
+
+.kdb-docs {
+	display: grid;
+	gap: 0.65rem;
+	margin: 0;
+	padding: 0;
+}
+
+.kdb-card {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) auto;
+	align-items: center;
+	gap: 0.75rem 0.85rem;
+	margin: 0;
+	padding: 0.85rem 1rem;
+	border: 1px solid #e4e9f2;
+	border-radius: 10px;
+	background: #f7f9fc;
+	transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.kdb-card:hover {
+	border-color: #c9d3e5;
+	background: #f7f9fc;
+}
+
+.kdb-card__open {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.75rem;
+	min-width: 0;
+	text-decoration: none;
+	color: inherit;
+}
+
+.kdb-card__icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 8px;
+	background: #ffffff;
+	border: 1px solid #e4e9f2;
+	color: #00074c;
+}
+
+.kdb-card__icon .kdb-icon {
+	width: 1.25rem;
+	height: 1.25rem;
+}
+
+.kdb-card__body {
+	min-width: 0;
+	display: grid;
+	gap: 0.2rem;
+}
+
+.kdb-card__title {
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.3;
+	color: #0f172a;
+	text-decoration: none;
+	text-underline-offset: 2px;
+}
+
+.kdb-card:hover .kdb-card__title,
+.kdb-card__open:focus-visible .kdb-card__title {
+	text-decoration: underline;
+}
+
+.kdb-card__file {
+	font-size: 0.78rem;
+	line-height: 1.35;
+	color: #94a3b8;
+	word-break: break-all;
+}
+
+.kdb-card__meta {
+	font-size: 0.82rem;
+	line-height: 1.4;
+	color: #64748b;
+}
+
+.kdb-card__download {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 2.35rem;
+	height: 2.35rem;
+	border: 1px solid #e2e8f0;
+	border-radius: 8px;
+	background: #ffffff;
+	color: #00074c;
+	text-decoration: none;
+	transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.kdb-card__download:hover,
+.kdb-card__download:focus-visible {
+	background: #eef2f7;
+	border-color: #c9d3e5;
+	color: #00074c;
+}
+
+.kdb-card__download .kdb-icon {
+	width: 1.1rem;
+	height: 1.1rem;
+}
+
+.kdb-card__products {
+	grid-column: 1 / -1;
+	display: grid;
+	gap: 0.45rem;
+	padding-top: 0.15rem;
+}
+
+.kdb-card__products-label {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
+	font-size: 0.72rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #64748b;
+}
+
+.kdb-card__products-label .kdb-icon {
+	width: 0.9rem;
+	height: 0.9rem;
+}
+
+.kdb-card__product-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+}
+
+.kdb-card__product {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.3rem;
+	padding: 0.35rem 0.65rem;
+	border-radius: 999px;
+	background: #ffffff;
+	border: 1px solid #e4e9f2;
+	color: #00074c;
+	font-size: 0.82rem;
+	font-weight: 600;
+	line-height: 1.2;
+	text-decoration: none;
+}
+
+.kdb-card__product:hover {
+	background: #e8eef8;
+	color: #00074c;
+}
+
+.kdb-card__product .kdb-icon {
+	width: 0.85rem;
+	height: 0.85rem;
+	flex-shrink: 0;
+}
+
+.kdb-card--compact {
+	padding: 0.75rem 0.8rem;
+	gap: 0.55rem;
+}
+
+.kdb-card--compact .kdb-card__icon {
+	width: 2.15rem;
+	height: 2.15rem;
+}
+
+.kdb-card--compact .kdb-card__icon .kdb-icon {
+	width: 1.1rem;
+	height: 1.1rem;
+}
+
+.kdb-card--compact .kdb-card__title {
+	font-size: 0.92rem;
+}
+
+.kdb-card--compact .kdb-card__file {
+	font-size: 0.72rem;
+}
+
+.kdb-card--compact .kdb-card__download {
+	width: 2.15rem;
+	height: 2.15rem;
+}
+
+.kdb-archive__filters {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) auto;
+	gap: 0.65rem;
+	align-items: stretch;
+	margin: 0 0 1.25rem;
+}
+
+.kdb-archive__field--search input {
+	width: 100%;
+	min-height: 46px;
+	padding: 0.55rem 0.85rem;
+	border: 1px solid #e2e8f0;
+	border-radius: 5px;
+	font: inherit;
+	background: #fff;
+	color: #0f172a;
+	box-shadow: none;
+}
+
+.kdb-archive__field--search input:focus {
+	outline: 2px solid color-mix(in srgb, #00074c 25%, transparent);
+	outline-offset: 1px;
+	border-color: #00074c;
+}
+
+.kdb-archive__submit {
+	min-height: 46px;
+	padding: 0.55rem 1.25rem;
+	border: 0;
+	border-radius: 5px;
+	background-color: #00074c;
+	color: #fff;
+	font: inherit;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.kdb-archive__submit:hover {
+	background: #00106e;
+}
+
+.kdb-archive__empty {
+	color: #64748b;
+}
+
+.kdb-archive__pagination {
+	margin-top: 1.25rem;
+}
+
+@media (max-width: 560px) {
+	.kdb-archive__filters {
+		grid-template-columns: 1fr;
+	}
+}
