@@ -1,6 +1,7 @@
 <?php
 /**
  * Plugin Name: Kafra Datablad
+ * Plugin URI: https://wordpress-plugins-docs.vercel.app/plugins/kafra-datablad
  * Description: Last opp PDF-datablad, koble dem til WooCommerce-produkter, vis på produktsider og på /dokumenter/.
  * Version: 1.2.2
  * Author: Benjamin
